@@ -2,6 +2,7 @@
 <div class="wrapper">
   <%= render 'layouts/aside' %>
   <div class="wrapper_main " >
+  <div class="wrapper_main_index">
    <%= will_paginate %>
     <ul class="users">
       <%= render @users %>
@@ -10,5 +11,6 @@
       <%# <% end %> 
     </ul>
     <%= will_paginate %>
+  </div>
   </div>
 </div>
