@@ -1,0 +1,19 @@
+body{
+   background-image: image_url('sakura3.jpg');
+  //  background-image: image_url('sora1.jpg');
+   background-size: cover;
+}
+.header{
+   height: 100px;
+  //  background-color: skyblue;
+}
+.container{
+   height: calc(100vh - 200px);
+  //  height: 100vh;
+  // background-color: peachpuff;
+   
+  }
+.footer{
+  height: 100px;
+  // background-color: slateblue;
+}
