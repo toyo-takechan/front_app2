@@ -17,12 +17,24 @@ body{
   display: flex;
   &_aside{
     width:300px;
-    // background-color: peru;
+    background-color: thistle;
   }
   &_main{
     flex: 1;
     // background-color: peachpuff;
   }
+}
+.home-index{
+  background-color: whitesmoke;
+}
+.home-top{
+  background-color: wheat;
+}
+.home-chat{
+  background-color: turquoise;
+}
+.home-heart{
+  background-color: pink;
 }
 .footer{
   height: 100px;
