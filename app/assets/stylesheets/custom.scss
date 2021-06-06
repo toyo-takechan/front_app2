@@ -8,11 +8,22 @@ body{
   //  background-color: skyblue;
 }
 .container{
-   height: calc(100vh - 200px);
+  min-height: calc(100vh - 200px);
   //  height: 100vh;
-  // background-color: peachpuff;
-   
+  // background-color: paleturquoise;
   }
+.wrapper{
+  min-height: calc(100vh - 200px);
+  display: flex;
+  &_aside{
+    width:300px;
+    // background-color: peru;
+  }
+  &_main{
+    flex: 1;
+    // background-color: peachpuff;
+  }
+}
 .footer{
   height: 100px;
   // background-color: slateblue;
