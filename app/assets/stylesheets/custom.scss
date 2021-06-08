@@ -1,6 +1,6 @@
 body{
-   background-image: image_url('sakura3.jpg');
-  //  background-image: image_url('sora1.jpg');
+  //  background-image: image_url('sakura3.jpg');
+   background-image: image_url('sora1.jpg');
    background-size: cover;
 }
 .header{
@@ -17,7 +17,7 @@ body{
   display: flex;
   &_aside{
     width:300px;
-    background-color: thistle;
+    // background-color: thistle;
   }
   &_main{
     flex: 1;
@@ -32,7 +32,7 @@ body{
 }
 // ここからchat
 .chat{
-  background-color: turquoise;
+  // background-color: turquoise;
   padding: 32px;
   &-messages{
     list-style: none;
@@ -93,9 +93,16 @@ body{
 
 
 
-
-.home-heart{
-  background-color: pink;
+// ここからheart
+.heart{
+  // background-color: pink;
+  &-icon{
+    color: palevioletred;
+    margin: 10px;
+  }
+  &-icon i{
+    margin-left: 20px;
+  }
 }
 .footer{
   height: 100px;
