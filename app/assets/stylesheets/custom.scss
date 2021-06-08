@@ -40,17 +40,22 @@ body{
   &-messages li{
     display: flex;
   }
+  &-messages li + li{
+    margin-top: 32px;
+  }
   &-left{
 
   }
   &-pic{
     background-color: pink;
     width: 80px;
+    height: 80px;
     text-align: center;
     border-radius: 50%;
   }
   &-img{
     width: 48px;
+    padding-top: 12px;
   }
   &-right{
     flex-direction: row-reverse;
@@ -58,10 +63,31 @@ body{
   &-text{
     background: #fff;
     border-radius: 8px;
+    margin: 0px 18px;
     padding: 16px 24px;
     max-width: 60%;
     line-height: 1.8;
     position: relative;
+  }
+  &-text::before {
+    content: '';
+    width: 0;
+    height: 0;
+    /* border: 8px solid #fff; */
+    border: 12px solid transparent;
+    position: absolute;
+  }
+
+  &-left &-text::before {
+    top: 12px;
+    left: -24px;
+    border-right-color: #fff;
+  }
+
+  &-right &-text::before {
+    top: 12px;
+    right: -24px;
+    border-left-color: #fff;
   }
 }
 
