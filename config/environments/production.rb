@@ -30,7 +30,7 @@ Rails.application.configure do
   # config.assets.compile = false
   config.assets.compile = true
   # JavaScriptのES6に対応させるため
-  config.assets.js_compressor = Uglifier.new(harmony: true)
+  # config.assets.js_compressor = Uglifier.new(harmony: true)
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
