@@ -27,8 +27,44 @@ body{
 .home-index{
   // background-color: whitesmoke;
 }
-.home-top{
+// ここからcar
+.home-car{
   // background-color: wheat;
+  &-top {
+    color: white;
+    text-align: left;
+    opacity: 0.7;
+
+  }
+  &-top h1 {
+    font-size: 64px;
+  }
+  &-second {
+    &-ul{
+      display: flex;
+    }
+    &-ul li{
+      list-style: none;
+      padding: 0 20px;
+    }
+  }
+  &-third {
+
+  }
+  &-last {
+  //   cursor: pointer;
+  text-align: center;
+  }
+  &-btn{ 
+    cursor: pointer;
+    background: chartreuse;
+    margin: 0 60px;
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
 }
 // ここからchat
 .chat{
@@ -96,15 +132,82 @@ body{
 // ここからheart
 .heart{
   // background-color: pink;
-  &-icon{
+  &-icon {
     color: palevioletred;
     margin: 10px;
   }
-  &-icon i{
-    margin-left: 20px;
+  &-icon1{ 
+    color: #e4e4e4;
+    margin: 10px;
+    user-select: none;
+    position: relative;
   }
+  &-icon i {
+    margin-left: 20px;
+    
+  }
+  &-like {
+    display: inline-flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    // background-color: pink;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    transition: background-color .3s;
+  }
+   &-like:hover {
+    //  background-color: #f5f5f5;
+   }
+   &-like [type="checkbox"]{
+     display: none;
+   }
+   &-like [type="checkbox"]:checked ~ &-icon1 {
+     animation-name: heart;
+     animation-duration: 6s;
+     animation-fill-mode: forwards;
+   }
+   @keyframes heart {
+     0% {
+      transform: scale(0);
+     }
+     50% {
+      transform: scale(1.1);
+     }
+     100% {
+       transform: scale(1);
+       color: red;
+     }
+   }
+   &-ripple {
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     background-color: red;
+     border-radius: 50%;
+     transform: scale(0);
+   }
+   &-like [type="checkbox"]:checked ~ &-ripple {
+     animation-name: ripple;
+     animation-duration: .6s;
+     animation-fill-mode: forwards;
+   }
+   @keyframes ripple {
+     0% {
+      transform: scale(0);
+     }
+     50% {
+      transform: scale(1.1);
+     }
+     100% {
+      transform: scale(1);
+      opacity: 0;
+     }
+   }
 }
-.footer{
+.footer {
   height: 100px;
   // background-color: slateblue;
 }
