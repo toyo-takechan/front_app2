@@ -10,6 +10,7 @@ require("@rails/activestorage").start()
 require("channels")
 // 追記
 require('jquery')
+require("car.js")
 
 
 
