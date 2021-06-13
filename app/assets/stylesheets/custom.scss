@@ -213,6 +213,49 @@ body{
    }
 }
 .footer {
-  height: 100px;
-  // background-color: slateblue;
+  min-height: 100px;
+  color:white;
+  background-color: #212121;
+  display: flex;
+  &-nav{
+    margin:0 auto;
+    min-width: 900px;
+    display: flex;
+    text-align: left;
+    &-cell{
+      min-width: 300px;
+      margin: 0 0 0 100px;
+    }
+    &-cell:hover {
+      background-color: #444444;
+    }
+    &-cell h4{
+      margin-left: 40px;
+    }
+    &-cell li {
+      list-style: none;
+      font-size: 14px;
+    }
+    &-cell li:hover{
+      background-color: #555555;
+    }
+    &-cell li a{
+      text-decoration: none;
+      color: white;
+    }
+    &-link {
+      margin-left: 10px;
+    }
+  }
+  &-nav:hover{
+    background-color: #333333;
+  }
+  /*Twitter*/
+  .fa-twitter-square{color:#1da1f2;}
+  /*Facebook*/
+  .fa-facebook-square{color:#3b5998;}
+  /*instagram*/
+  .fa-instagram-square{color:#e1306c;}
+  .fa-google{ color: plum}
+
 }

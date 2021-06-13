@@ -1,3 +1,41 @@
 <footer class ="footer">
-  footer
+  <div class="footer-nav">
+    <div class="footer-nav-cell">
+      <h4>このアプリについて</h4>
+      <ul>
+        <li><%= link_to "説明ページ", "#" %></li>
+        <li><%= link_to "お知らせ", "#" %></li>
+        <li><%= link_to "お問合せ", "#" %></li>
+      </ul>
+    </div>
+    <div class="footer-nav-cell">
+      <h4>利用規約</h4>
+      <ul>
+        <li><%= link_to "プライバシーポリシー", "#" %></li>
+        <li><%= link_to "フロントアプリ利用規約", "#" %></li>
+      </ul>
+    </div>
+    <div class="footer-nav-cell">
+      <h4>SNSとリンク</h4>
+      <ul>
+       <li><%= link_to "https://ja-jp.facebook.com",target: :_blank, rel: "noopener noreferrer" do %>
+            <i class="fab fa-facebook-square"></i>
+            <span class="footer-nav-link">Facebookへ</span>
+            <% end %></li>
+        <li><%= link_to "https://twitter.com/notifications",target: :_blank, rel: "noopener noreferrer" do %>
+            <i class="fab fa-twitter-square"></i>
+            <span class="footer-nav-link">Facebookへ</span>
+            <% end %></li>
+        <li><%= link_to "http://www.google.co.jp",target: :_blank, rel: "noopener noreferrer" do %>
+            <i class="fab fa-google"></i>
+            <span class="footer-nav-link">Googleへ</span>
+            <% end %></li>
+         <li><%= link_to "https://railstutorial.jp/",target: :_blank, rel: "noopener noreferrer" do %>
+            <%= image_tag("rails.svg", alt:"logo", width:"20")%>
+            <span class="footer-nav-link">Rails tutorialへ</span>
+            <% end %></li>
+      </ul>
+    </div>
+
+  </div>
 </footer>
