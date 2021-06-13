@@ -1,6 +1,6 @@
 body{
-  //  background-image: image_url('sakura3.jpg');
-   background-image: image_url('sora1.jpg');
+   background-image: image_url('sakura3.jpg');
+  //  background-image: image_url('sora1.jpg');
    background-size: cover;
 }
 .header{
@@ -18,7 +18,9 @@ body{
       cursor: pointer;
     }
     &-title a{
-      color: whitesmoke;
+      color:yellow;
+
+      // color: whitesmoke;
       text-decoration: none;
     }
   }
@@ -94,16 +96,30 @@ body{
       display: none;
     }
   }
-  &-top h1 {
+  &-top h1 span{
     font-size: 64px;
+    // background-color: chartreuse;
+    background-color:#ff69b4;
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  &-top h2 span{
+    // background-color: chartreuse;
+    background-color:#ff69b4;
+    padding: 5px 10px;
+    border-radius: 4px;
   }
   &-second {
     &-ul{
       display: flex;
+      cursor: pointer;
     }
     &-ul li{
       list-style: none;
       padding: 0 20px;
+    }
+    &-ul li:hover {
+      opacity: 0.7;
     }
   }
   &-third {
