@@ -5,7 +5,60 @@ body{
 }
 .header{
    height: 100px;
+   display: flex;
   //  background-color: skyblue;
+  &-left {
+    width: 300px;
+    display: flex;
+    &-logo{
+      border-radius: 50%;
+    }
+    &-title {
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    &-title a{
+      color: whitesmoke;
+      text-decoration: none;
+    }
+  }
+  &-middle {
+    flex: 1;
+    &-link {
+      display: flex;
+      list-style: none;
+    }
+    &-link  a{
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    &-link li{
+      margin-left: 20px;
+    }
+  }
+  &-right {
+    min-width: 300px;
+    display: flex;
+  }
+  &-button{
+    text-align: center;
+    font-size: 20px;
+    color:whitesmoke;
+    margin: 10px 20px;
+    height: 65px;
+    line-height: 65px;
+    min-width: 100px;
+    background-color: #239b76;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &-button a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  &-button:hover{
+    opacity: 0.7;
+  }
 }
 .container{
   min-height: calc(100vh - 200px);
