@@ -4,4 +4,8 @@ $(function(){
     $('.home-car-top-sucsess').fadeIn();
   });
 
+  $('.car-drive').click(function(){
+    $('#cuple_man').show();
+  })
+
 });
