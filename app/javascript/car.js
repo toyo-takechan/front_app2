@@ -5,7 +5,8 @@ $(function(){
   });
 
   $('.car-drive').click(function(){
-    $('#cuple_man').show();
+    // $('#cuple_man').show();
+    $('.home-car-big').show();
   })
 
 });
