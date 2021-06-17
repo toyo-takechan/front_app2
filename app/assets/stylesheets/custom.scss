@@ -162,11 +162,21 @@ body{
     height: auto;
     text-align: center;
   }
-  #cuple_man{
+  .modal-image{
+    width: 100%;
+  }
+  #couple_man{
     // position: absolute;
     // margin: 20px;
-    width: 100%;
+    // width: 100%;
     // display: none;
+  }
+  .fa-times  {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
   }
 }
 // ここからchat
