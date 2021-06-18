@@ -10,4 +10,11 @@ class HomesController < ApplicationController
 
   def car
   end
+
+  def about
+  end
+
+  def contact
+  end
+  
 end

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   root to: 'homes#index'
-  get '/homes/car', to: 'homes#car'
-  get '/homes/chat', to: 'homes#chat'
-  get '/homes/heart', to: 'homes#heart'
+  get '/car',    to: 'homes#car'
+  get '/chat',   to: 'homes#chat'
+  get '/heart',  to: 'homes#heart'
+  get '/about',  to: 'homes#about'
+  get '/contact',to: 'homes#contact'
 end
