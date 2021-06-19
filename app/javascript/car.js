@@ -118,7 +118,14 @@ $(function(){
     $('#coupe_white').fadeOut();
   });
 
-
+  $('.home-hover').hover(
+    function() {
+      $('.home-car-contents').addClass('home-car-active');
+    },
+    function() {
+      $('.home-car-contents').removeClass('home-car-active');
+    }
+  );
 
 
 
