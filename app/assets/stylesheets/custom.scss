@@ -335,6 +335,61 @@ body{
      }
    }
 }
+
+// ここからcontact
+.home_contact{
+  
+  &_top{
+    text-align: center;
+    color: white;
+  }
+  &_second{
+
+  }
+  &_faq{
+   background-color: #e6ecf0;
+   color: #5f5d60;
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   border-radius: 10px;
+    .faq{
+      text-align: center;
+      list-style: none;
+      margin: 0 auto;
+      padding-left: 300px;
+      &-list-item{
+      margin:10px;
+      border-bottom:1px solid #ccc;
+      position:relative;
+      cursor:pointer;
+      text-align: left;
+      }
+      &-list-item h3{
+        font-size: 14px;
+      }
+      &-list-item span{
+        position:absolute;
+        top:0;
+        right:5px;
+        color:#ccc;
+        font-size:13px;
+      }
+
+      &-answer{
+        font-size: 12px;
+        padding: 5px 0px;
+        margin-bottom: 15px;
+        display: none;
+      }
+      &-question{
+
+      }
+  }
+  }
+}
+  
+
 .footer {
   min-height: 100px;
   color:white;

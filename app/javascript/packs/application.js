@@ -11,6 +11,7 @@ require("channels")
 // 追記
 require('jquery')
 require("car.js")
+require("contact.js")
 
 
 
