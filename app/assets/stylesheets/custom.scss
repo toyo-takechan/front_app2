@@ -388,6 +388,44 @@ body{
   }
   }
 }
+
+// ここからform
+.form {
+  min-width: 700px;
+  height: 100%;
+  margin-right: 500px;
+  padding: 30px 0 50px 200px;
+  font-size: 24px;
+  // background-color: #239b76;
+  background-color: peachpuff;
+  border-radius: 30px;
+  &_h1 a{
+    text-decoration: none;
+  }
+  &-label {
+    display: block;
+  }
+  &-control{
+    display: block;
+    min-width: 500px;
+    border-radius: 20px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    // margin: 0 auto;
+  }
+  &-btn{
+    min-width: 300px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    // margin: 0 auto;
+  }
+  &-btn:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+  }
+}
   
 
 .footer {
