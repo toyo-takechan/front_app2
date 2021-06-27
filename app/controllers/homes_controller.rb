@@ -1,5 +1,5 @@
 class HomesController < ApplicationController
-  def index
+  def top
   end
 
   def heart
@@ -16,5 +16,16 @@ class HomesController < ApplicationController
 
   def contact
   end
+
+  def robot1
+  end
+
+  def robot2
+  end
+
+  def robot3
+  end
   
+  def robot4
+  end
 end
