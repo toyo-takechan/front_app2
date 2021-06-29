@@ -1,11 +1,18 @@
 <% provide(:title, "マイページ") %>
 <div class="wrapper">
-  <div class="wrapper_aside">
-  </div>
+  <%= render 'layouts/aside' %>
+  <%# <div class="wrapper_aside"> %>
+    <%# <div class="user_info"> %>
+      <%# <%= gravatar_for @user %> 
+      <%# <%= @user.name %> 
+    <%# </div> %>
+  <%# </div> %>
   <div class="wrapper_main user_show">
-    <h1 class="#"><%= "ユーザーさんのページ" %><br>
-      <%= @user.name  %><br>
-      <%= @user.email %><br>
+    <h1 class="#"><%= "あなたのページ" %><br>
+      <div class ="user_show_info">
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </div>  
     </h1>
     <%= link_to "プロフィールページ更新", edit_user_path, class:"#" %>
   </div>
