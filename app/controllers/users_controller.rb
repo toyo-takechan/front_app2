@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Front App　へようこそ!"
+      flash[:success] = "ユーザー登録に成功しました！　Front App　へようこそ!"
       redirect_to @user
     else
       render 'new'
@@ -26,6 +26,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update(user_params)
       redirect_to @user
+      
     else
       render 'edit'
     end
