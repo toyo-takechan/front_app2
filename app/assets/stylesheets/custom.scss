@@ -3,6 +3,14 @@ body{
   //  background-image: image_url('sora1.jpg');
    background-size: cover;
 }
+// ここからflash
+.notification{
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+}
+
 .header{
    height: 100px;
    display: flex;
