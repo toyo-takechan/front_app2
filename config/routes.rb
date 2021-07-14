@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get    '/car',     to: 'homes#car'
   get    '/chat',    to: 'homes#chat'
   get    '/heart',   to: 'homes#heart'
+  get    '/slide',   to: 'homes#slide'
   get    '/about',   to: 'homes#about'
   get    '/contact', to: 'homes#contact'
   get    '/signup' , to: "users#new"
