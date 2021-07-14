@@ -14,6 +14,7 @@ require("car.js")
 require("contact.js")
 require("top.js")
 require("robot.js")
+require("slide.js")
 
 
 

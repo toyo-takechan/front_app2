@@ -50,6 +50,8 @@ body{
       vertical-align: middle;
     }
     &-link li{
+      max-width: 400px;
+      max-height: 50px;
       margin-left: 60px;
       padding: 10px 20px;
       background-color: coral;
@@ -554,22 +556,45 @@ body{
   margin-bottom: 30px;
 }
 
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+  display: none;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
 .slides {
   padding: 0;
 }
 
 .slide {
+  width: 1000px;
+  height: auto;
+  border-radius: 5px;
   display: none;
+  margin:0 auto;
 }
 
 .active {
   display: block;
 }
-.slide img {
-  width: 1000px;
-  height: auto;
-  border-radius: 5px;
-}
+
 
 .index-btn-wrapper {
   font-size: 16px;
