@@ -14,6 +14,12 @@
 
   <%= f.submit "ログイン", class: "form-btn" %>
 
+  <%= f.label :remember_me, class:"checkbox" do %>
+    <%= f.check_box :remember_me%>
+    <span> ログイン状態を保持する </span>
+  <% end %>
+
+
   <% end %>
 
   <p>新しいユーザーですか？<%= link_to "新規登録", signup_path %></p>
