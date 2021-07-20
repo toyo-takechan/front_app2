@@ -6,10 +6,10 @@
   <div class="header-middle">
     <ul class="header-middle-link">
       <% if logged_in? %>
-      <li><%= link_to "チャットスペース" , chat_path, class:"header-middle-link-em" %></li>
-      <li><%= link_to "car", car_path %></li>
-      <li><%= link_to "heart", heart_path %></li>
-      <li><%= link_to "スライド", slide_path %></li>
+      <li><%= link_to "チャットスペース" , chat_path, data: {"turbolinks" => false}, class:"header-middle-link-em" %></li>
+      <li><%= link_to "car", car_path, data: {"turbolinks" => false} %></li>
+      <li><%= link_to "heart", heart_path, data: {"turbolinks" => false} %></li>
+      <li><%= link_to "スライド", slide_path, data: {"turbolinks" => false} %></li>
       <% else %>
       <% end %>
     </ul>
