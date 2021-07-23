@@ -1,7 +1,7 @@
 <header class ="header">
   <div class="header-left">
     <%= link_to image_tag("NW_055.jpg",alt:"logo", width:"80px", class:"header-left-logo"), root_path %>
-    <h2 class="header-left-title"><%= link_to "FRONT APP", alt:"title"  %></h2>
+    <h2 class="header-left-title"><%= link_to "FRONT APP", alt:"title", data: {"turbolinks" => false}  %></h2>
   </div>
   <div class="header-middle">
     <ul class="header-middle-link">
@@ -16,10 +16,11 @@
   </div>
   <div class="header-right">
    <% if logged_in? %>
-    <div class="header-button"><%= link_to "ログアウト", logout_path, method: :delete %></div>
+    <div class="header-button"><%= link_to "ログアウト", logout_path, method: :delete, data: {"turbolinks" => false} %></div>
+    <div class="header-button"><%= link_to "ユーザー 一覧", users_path, data: {"turbolinks" => false} %></div>
   　<% else %>
-    <div class="header-button"><%= link_to "ログイン", login_path %></div>
-    <div class="header-button"><%= link_to "新規登録", signup_path %></div>
+    <div class="header-button"><%= link_to "ログイン", login_path, data: {"turbolinks" => false} %></div>
+    <div class="header-button"><%= link_to "新規登録", signup_path, data: {"turbolinks" => false} %></div>
    <% end %>
   </div>
 </header>

@@ -684,6 +684,22 @@ body{
   border-radius: 5px;
 }
 
+.users {
+  list-style: none;
+  margin: 0;
+  li{
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 2px solid sandybrown;
+    width: 75%;
+  }
+}
+.users a{
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 
 
 // ここからform
