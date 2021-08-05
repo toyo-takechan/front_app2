@@ -37,12 +37,8 @@ body{
     &-link {
       display: flex;
       list-style: none;
-      font-size: 24px;
-     
-      &-em{
-       font-size: 36px;
-       font-weight: bold;
-      }
+      font-size: 36px;
+      font-weight: bold;
     }
     &-link  a{
       text-decoration: none;
@@ -53,9 +49,31 @@ body{
       max-width: 400px;
       max-height: 50px;
       margin-left: 60px;
-      padding: 10px 20px;
-      background-color: coral;
+      padding: 10px 30px;
+      background-color: palevioletred;
       border-radius: 10px;
+    }
+  }
+  &-middle2 {
+    min-width: 100px;
+    &-link {
+      display: flex;
+      list-style: none;
+      font-size: 12px;
+     
+    }
+    &-link  a{
+      text-decoration: none;
+      color: whitesmoke;
+      vertical-align: middle;
+    }
+    &-link li{
+      max-width: 400px;
+      max-height: 50px;
+      margin-left: 60px;
+      padding: 5px 10px;
+      background-color: coral;
+      border-radius: 5px;
     }
   }
   &-right {
