@@ -1,4 +1,6 @@
 class ChatsController < ApplicationController
+  before_action :logged_in_user, only: [:show, :create, :destroy]
+
   def show
   #BさんのUser情報を取得
    @user = User.find(params[:id])
@@ -31,15 +33,21 @@ class ChatsController < ApplicationController
     @chat = Chat.new(room_id: room.id)
   end
 
+  def new
+  end
+
   def create
-    @chat = current_user.chats.new(chat_params)
-    @chat.save
+    # @chat = current_user.chats.new(chat_params)
+    # @chat.save
+  end
+
+  def destroy
   end
 
   private
 
-  def chat_params
-    params.require(:chat).permit(:message, :room_id)
-  end
+  # def chat_params
+  #   params.require(:chat).permit(:message, :room_id)
+  # end
 
 end
