@@ -1,12 +1,15 @@
 <% provide(:title, "マイページ") %>
 <div class="wrapper">
-  <%= render 'layouts/aside' %>
-  <%# <div class="wrapper_aside"> %>
-    <%# <div class="user_info"> %>
-      <%# <%= gravatar_for @user %> 
-      <%# <%= @user.name %> 
-    <%# </div> %>
-  <%# </div> %>
+  <%# <%= render 'layouts/aside' %> 
+  <div class="show_aside">
+      <% if @user.chats.any? %>
+        <h3 class="show_aside_title">投稿数 (<%= @user.chats.count %>)</h3>
+        <ol class="chats">
+          <%= render @chats %>
+        </ol>
+        <%= will_paginate @chats %>
+      <% end %>
+  </div>
   <div class="wrapper_main user_show">
     <h1 class="#"><%= "あなたのページ" %><br>
       <div class ="user_show_info">

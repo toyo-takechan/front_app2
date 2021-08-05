@@ -1,0 +1,8 @@
+<li id="chat-<%= chat.id %>">
+  <%= link_to gravatar_for(chat.user, size: 50), chat.user %>
+  <span class= "user"><%=link_to chat.user.name, chat.user %></span>
+  <span class= "content"><%= chat.content %></span>
+  <span class= "timestamp">
+    <%= time_ago_in_words(chat.created_at) %>前に投稿されました。
+  </span>
+</li>

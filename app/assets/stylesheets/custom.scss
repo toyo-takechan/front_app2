@@ -113,6 +113,7 @@ body{
     // background-color: thistle;
     border-radius: 20px;
   }
+  
   // ここからロボット
   .robots{
     display: none;
@@ -702,6 +703,49 @@ body{
   margin: 30px 0 ;
   text-align: center;
 }
+// showのaside
+  .show_aside{
+    min-width: 300px;
+    max-width: 500px;
+    margin: 30px 10px ;
+    background-color: palegoldenrod;
+    border-radius: 20px;
+    &_title{
+      text-align: center;
+    }
+  }
+  .chats {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: gray;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+  // 画像を表示
 .gravatar {
   border-radius: 5px;
 }
