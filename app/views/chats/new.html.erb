@@ -2,14 +2,13 @@
 <div class="wrapper">
   <%= render 'layouts/aside' %>
   <div class="wrapper_main form">
-  <h1 class="form_h1">投稿ページ</h1>
+  <h1 class="form_h1">投稿しよう！</h1>
 
   <%= form_with(model: @chat, local: true) do |f| %>
-    <div class ="field">
-      <%= f.text_area :content, placeholder: "投稿してください。"%>
-    </div>
 
-  <%= f.submit "投稿する。", class: "form-btn" %>
+   <%= f.text_area :content, placeholder: "投稿してください。", class: "form_content" %>
+
+   <%= f.submit "投稿する。", class: "form-btn" %>
 
   <% end %>
 

@@ -37,8 +37,8 @@ class ChatsController < ApplicationController
   end
 
   def create
-    # @chat = current_user.chats.new(chat_params)
-    # @chat.save
+    @chat = current_user.chats.new(chat_params)
+    @chat.save
   end
 
   def destroy
@@ -46,8 +46,8 @@ class ChatsController < ApplicationController
 
   private
 
-  # def chat_params
-  #   params.require(:chat).permit(:message, :room_id)
-  # end
+  def chat_params
+    params.require(:chat).permit(:content)
+  end
 
 end

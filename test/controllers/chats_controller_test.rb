@@ -15,9 +15,9 @@ class ChatsControllerTest < ActionDispatch::IntegrationTest
 
   test "should redirect destroy when not logged in" do
     assert_no_difference 'Chat.count' do
-    # delete chats_path(@chat)
+    delete new_chat_path(@chat)
     end
-    # assert_redirected_to login_url
+    assert_redirected_to login_url
   end
 
 end
