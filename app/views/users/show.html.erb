@@ -2,12 +2,12 @@
 <div class="wrapper">
   <%# <%= render 'layouts/aside' %> 
   <div class="show_aside">
-      <% if @user.chats.any? %>
-        <h3 class="show_aside_title">投稿数 (<%= @user.chats.count %>)</h3>
-        <ol class="chats">
-          <%= render @chats %>
+      <% if @user.microposts.any? %>
+        <h3 class="show_aside_title">投稿数 (<%= @user.microposts.count %>)</h3>
+        <ol class="microposts">
+          <%= render @microposts %>
         </ol>
-        <%= will_paginate @chats %>
+        <%= will_paginate @microposts %>
       <% end %>
   </div>
   <div class="wrapper_main user_show">

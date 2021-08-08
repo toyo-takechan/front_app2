@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'chats/show'
+  # get 'microposts/show'
   get 'password_resets/new'
   get 'password_resets/edit'
   get 'sessions/new'
@@ -29,6 +29,8 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
+  resources :microposts,   only: [:new, :show, :create, :destroy]
   resources :chats, only: [:new, :show, :create, :destroy]
+
 end
 

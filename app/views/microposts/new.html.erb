@@ -1,0 +1,17 @@
+<% provide(:title, 'micropost-post') %>
+<div class="wrapper">
+  <%= render 'layouts/aside' %>
+  <div class="wrapper_main form">
+  <h1 class="form_h1">投稿しよう！</h1>
+
+  <%= form_with(model: @micropost, local: true) do |f| %>
+
+   <%= f.text_area :content, placeholder: "投稿してください。", class: "form_content" %>
+
+   <%= f.submit "投稿する。", class: "form-btn" %>
+
+  <% end %>
+
+  <p>新しいユーザーですか？<%= link_to "新規登録", signup_path %></p>
+ </div>
+</div>

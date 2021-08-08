@@ -69,11 +69,19 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.authenticated?(:remember, '')
   end
 
-  test "associated chats should be destroyed" do
+  test "associated microposts should be destroyed" do
     @user.save
-    @user.chats.create!(content: "吾輩は猫である")
-    assert_difference 'Chat.count', -1 do
+    @user.microposts.create!(content: "吾輩は猫である")
+    assert_difference 'Micropost.count', -1 do
       @user.destroy
     end
   end
+
+  # test "associated chats should be destroyed" do
+  #   @user.save
+  #   @user.chats.create!(content: "吾輩は猫である")
+  #   assert_difference 'Chat.count', -1 do
+  #     @user.destroy
+  #   end
+  # end
 end
