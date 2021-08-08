@@ -5,7 +5,7 @@
     <h1 class="form_h1"><%=link_to "Front  Appへようこそ", new_user_path %></h1>
 
     <%= form_with model: @user, local: true do |f|%>
-    <%= render "shared/error_messages" %>
+    <%= render "shared/error_messages", object: f.object %>
 
     <%= f.label "名前", class: "form-label" %>
     <%= f.text_field :name, class:"form-control" %>

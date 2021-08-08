@@ -5,6 +5,7 @@
   <h1 class="form_h1">投稿しよう！</h1>
 
   <%= form_with(model: @micropost, local: true) do |f| %>
+    <%= render 'shared/error_messages', object: f.object%>
 
    <%= f.text_area :content, placeholder: "投稿してください。", class: "form_content" %>
 
