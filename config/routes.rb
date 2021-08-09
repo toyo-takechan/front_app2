@@ -26,7 +26,11 @@ Rails.application.routes.draw do
   post   '/login',   to: "sessions#create"
   delete '/logout',  to: "sessions#destroy"
   # get    'chat/id',  to: 'chats#show'
-  resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
   resources :microposts,   only: [:new, :show, :create, :destroy]
