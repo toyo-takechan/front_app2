@@ -149,6 +149,24 @@ body{
       opacity: 0.5;
     }
   }
+  .bigbutton {
+    text-align: center;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 50px 0;
+    border-radius: 5%;
+    font-size: 80px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+  .bigbutton a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
 }
 
 // ここからロボット

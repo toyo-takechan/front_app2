@@ -2,6 +2,10 @@
   <%= render 'layouts/aside'%>
   <div class="wrapper_main top-index">
       <%= image_tag 'ruby1.png', alt:"logo", class:"top-index_image" %>
-    
+       <% if logged_in? %>
+        <div class="bigbutton"><%= link_to "Your Page" , user_path(current_user), data: {"turbolinks" => false} %></div> 
+      <% else %>
+        <div class="bigbutton"><%= link_to "新規登録" , signup_path, data: {"turbolinks" => false} %></div>
+      <% end %>
   </div>
 </div>
