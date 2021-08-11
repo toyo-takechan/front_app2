@@ -19,6 +19,10 @@
     </h1>
     <%= link_to "プロフィールページ更新", edit_user_path, class:"#" %>
 
+    <section class="stats">
+        <%= render 'shared/stats' %>
+      </section>
+
     <div class="user_show_feed">
       <h3>フィードの原型</h3>
       <%= render 'shared/feed' %>

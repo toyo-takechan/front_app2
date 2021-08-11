@@ -776,13 +776,15 @@ body{
 // フォロー　フォロワー
 .stats {
   overflow: auto;
-  margin-top: 0;
-  padding: 0;
+  margin: 0 auto;
+  // margin-top: 0;
+  padding: 20px 0;
+  display: flex;
   a {
-    float: left;
+    // float: left;
     padding: 0 10px;
-    border-left: 1px solid $gray-lighter;
-    color: gray;
+    border-left: 1px solid gray;
+    color: black;
     &:first-child {
       padding-left: 0;
       border: 0;
