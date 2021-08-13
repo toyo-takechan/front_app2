@@ -724,8 +724,9 @@ body{
   &_info{
 
   }
-  &_show{
-
+  &_feed{
+    text-align: left;
+    margin-left: 100px;
   }
 }
 // showのaside
@@ -740,6 +741,9 @@ body{
     }
     >h1{
       // color:blue;
+      text-align: center;
+    }
+    &_form{
       text-align: center;
     }
   }
