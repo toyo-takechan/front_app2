@@ -2,6 +2,7 @@
 <div class="wrapper">
   <%# <%= render 'layouts/aside' %> 
   <div class="show_aside">
+      <h1 class="#"><%= @user.name %>さんの投稿<br>
       <% if @user.microposts.any? %>
         <h3 class="show_aside_title">投稿数 (<%= @user.microposts.count %>)</h3>
         <ol class="microposts">
@@ -11,7 +12,7 @@
       <% end %>
   </div>
   <div class="wrapper_main user_show">
-    <h1 class="#"><%= "あなたのページ" %><br>
+    <div class="#"><%= render 'follow_form' if logged_in? %></div>
       <div class ="user_show_info">
         <%= gravatar_for @user %>
         <%= @user.name %>
@@ -23,8 +24,7 @@
         <%= render 'shared/stats' %>
       </section>
 
-    <%= render 'follow_form' if logged_in? %>
-
+    
     <div class="user_show_feed">
       <h3>フィードの原型</h3>
       <%= render 'shared/feed' %>
