@@ -4,9 +4,9 @@
       <h4>このアプリについて</h4>
       <ul>
         <li><%= link_to "説明ページ", "#" %></li>
-        <li><%= link_to "お知らせ", about_path %></li>
-        <li><%= link_to "お問合せ", contact_path %></li>
-        <li><%= link_to "ホームへ", root_path %></li>
+        <li><%= link_to "お知らせ", about_path, data: {"turbolinks" => false} %></li>
+        <li><%= link_to "お問合せ", contact_path, data: {"turbolinks" => false} %></li>
+        <li><%= link_to "ホームへ", root_path, data: {"turbolinks" => false} %></li>
       </ul>
     </div>
     <div class="footer-nav-cell">
