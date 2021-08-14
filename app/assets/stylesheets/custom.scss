@@ -44,14 +44,17 @@ body{
       text-decoration: none;
       color: whitesmoke;
       vertical-align: middle;
-    }
-    &-link li{
-      max-width: 400px;
-      max-height: 50px;
+      padding: 10px 30px;
       margin-left: 60px;
       padding: 10px 30px;
+      min-width: 200px;
       background-color: palevioletred;
       border-radius: 10px;
+    }
+    &-link li{
+      // max-width: 400px;
+      // min-width: 200px;
+      // max-height: 50px;
     }
   }
   &-middle2 {
