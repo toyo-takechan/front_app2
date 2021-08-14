@@ -10,12 +10,17 @@
   </head>
 
   <body>
-      <% flash.each do |message_type, message| %>
-        <div class="notification">
-          <%= message_type %>
-          <%= message %>
-        </div>
+      <%# <% flash.each do |message_type, message| %> 
+        <%# <div class="notification"> %>
+          <%# <%= message_type %> 
+          <%# <%= message %> 
+        <%# </div> %>
+      <%# <% end %> 
+    <div class ="notification">
+      <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "flash-#{key}" %>
       <% end %>
+    </div>
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>

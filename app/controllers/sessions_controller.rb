@@ -12,11 +12,11 @@ class SessionsController < ApplicationController
       else
         message  = "アカウントを有効化できませんでした。"
         message += "メールの有効化リンクをチェックしてください。"
-        flash[:warning] = message
+        flash[:alert] = message
         redirect_to root_url
       end
     else
-      flash.now[:danger] = "ログインに失敗しました。"
+      flash.now[:alert] = "ログインに失敗しました。"
       render 'new'
     end
   end

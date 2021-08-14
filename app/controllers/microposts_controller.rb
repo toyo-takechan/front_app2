@@ -14,17 +14,17 @@ class MicropostsController < ApplicationController
     @micropost = current_user.microposts.build(micropost_params)
     @micropost.image.attach(params[:micropost][:image])
     if @micropost.save
-      flash[:success] = "投稿に成功しました!"
+      flash[:notice] = "投稿に成功しました!"
       redirect_to user_path(current_user)
     else
-      flash[:info] ="投稿に失敗しました!"
+      flash[:alert] ="投稿に失敗しました!"
       render 'new'
     end
   end
 
   def destroy
     @micropost.destroy
-    flash[:success] = "投稿を削除しました。"
+    flash[:notice] = "投稿を削除しました。"
     redirect_to request.referrer || root_url
   end
 

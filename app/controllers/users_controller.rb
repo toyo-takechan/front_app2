@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update(user_params)
-      flash[:success] = "プロフィールを更新しました。"
+      flash[:notice] = "プロフィールを更新しました。"
       redirect_to @user
       
     else
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "ユーザーを削除しました。"
+    flash[:notice] = "ユーザーを削除しました。"
     redirect_to users_url
   end
 

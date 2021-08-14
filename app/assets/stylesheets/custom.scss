@@ -5,12 +5,17 @@ body{
 }
 // ここからflash
 .notification{
-  background-color: cornflowerblue;
   color: white;
   text-align: center;
   margin-top: 0px;
 }
+.flash-notice {
+  background-color: cornflowerblue;
 
+}
+.flash-alert {
+  background-color: orange;
+}
 .header{
    height: 100px;
    display: flex;
