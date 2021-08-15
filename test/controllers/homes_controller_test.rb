@@ -14,11 +14,6 @@ class HomesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "FrontApp2 /car"
   end
 
-  test "shoud get chat" do
-    get chat_path
-    assert_response :success
-    assert_select "title", "FrontApp2 /chat"
-  end
 
   test "shoud get heart" do
     get heart_path
