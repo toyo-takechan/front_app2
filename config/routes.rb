@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # get 'users/destroy'
   root to: 'homes#top'
   get    '/car',     to: 'homes#car'
-  get    '/chat',    to: 'homes#chat'
+  # get    '/chat',    to: 'homes#chat'
   get    '/heart',   to: 'homes#heart'
   get    '/slide',   to: 'homes#slide'
   get    '/about',   to: 'homes#about'

@@ -466,6 +466,7 @@ body{
 
   }
   &-pic{
+    color: rgb(205, 255, 220);
     background-color: pink;
     width: 80px;
     height: 80px;
@@ -507,6 +508,13 @@ body{
     top: 12px;
     right: -24px;
     border-left-color: #fff;
+  }
+  >h1{
+    color:blanchedalmond;
+    text-align: center;
+    font-size: 48px;
+    background-color: palevioletred;
+    border-radius: 50%;
   }
 }
 

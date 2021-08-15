@@ -4,6 +4,8 @@ class ChatsController < ApplicationController
   def show
   #BさんのUser情報を取得
    @user = User.find(params[:id])
+   @chats = @user.chats.paginate(page: params[:page])
+
   end
 
   def new
@@ -14,7 +16,7 @@ class ChatsController < ApplicationController
     @chat = current_user.chats.build(chat_params)
     if @chat.save
       flash[:notice] = "投稿に成功しました!"
-      redirect_to user_path(current_user)
+      redirect_to chat_path(current_user)
     else
       flash[:alert] ="投稿に失敗しました!"
       render 'new'

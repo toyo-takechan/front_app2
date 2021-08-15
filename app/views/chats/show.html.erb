@@ -1,2 +1,30 @@
-<h1>Chats#show</h1>
-<p>Find me in app/views/chats/show.html.erb</p>
+<% provide(:title, " /chat" )%>
+<div class="wrapper">
+  <%= render 'layouts/aside' %>
+  <div class="wrapper_main chat">
+  <h1>現在作成中です。</h1>
+    <ul class="chat-messages">
+      <li class="chat-left">
+        <div class="chat-pic">
+          <%# <%= image_tag 'chat/toypoodle.png', alt: "logo", class: "chat-img" %> 
+          <%= gravatar_for @user, class:"chat-img" %>
+          <%= @user.name %>
+        </div>
+        <div class="chat-text">
+          <%  @chats.each do |chat| %>
+          <%= chat.content %>
+          <% end %>
+        </div>
+      </li>
+      <li class="chat-right">
+        <div class="chat-pic">
+          <%= image_tag 'chat/toypoodle.png',alt: "logo", class: "chat-img"  %>
+        </div>
+        <div class="chat-text">
+          お久しぶりです！
+        </div>
+      </li>    
+    </ul>
+
+  </div>
+</div>
