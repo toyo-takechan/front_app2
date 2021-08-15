@@ -18,6 +18,9 @@ class HomesController < ApplicationController
   def contact
   end
 
+  def explain
+  end
+
   def robot1
   end
 

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get    '/slide',   to: 'homes#slide'
   get    '/about',   to: 'homes#about'
   get    '/contact', to: 'homes#contact'
+  get    '/explain', to: 'homes#explain'
   get    '/signup' , to: "users#new"
   get    '/robot1',  to: "homes#robot1"
   get    '/robot2',  to: "homes#robot2"
