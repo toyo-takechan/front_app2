@@ -69,7 +69,7 @@ body{
       display: flex;
       list-style: none;
       font-size: 10px;
-     
+
     }
     &-link  a{
       text-decoration: none;
@@ -123,7 +123,7 @@ body{
     // background-color: thistle;
     border-radius: 20px;
   }
-  
+
   // ここからロボット
   .robots{
     display: none;
@@ -143,7 +143,7 @@ body{
       background-color: palevioletred;
       border-radius: 20px;
     }
-    
+
   }
 }
 .top-index{
@@ -182,7 +182,7 @@ body{
     .robot{
       // width: calc(100% - 300px);
       // height: 100vh;
-      // background-color: olive; 
+      // background-color: olive;
       display: flex;
       &-left{
         &-p{
@@ -212,16 +212,25 @@ body{
       width: 600px;
       height: 600px;
       background: rgb(25, 182, 25);
-      margin-top: 200px; 
+      margin-top: 200px;
       margin-left: 200px;
       text-align: center;
       border-radius: 50%;
       line-height: 600px;
       font-size: 60px;
       color: #fff;
-      line-height: 600px; 
+      line-height: 600px;
       cursor: pointer;
+      box-shadow: 0 10px 0 rgb(17, 129, 17);
+      user-select: none;
       // display: none;
+    }
+    #omi-btn:hover {
+      opacity: 0.9;
+    }
+    #omi-btn:active {
+      box-shadow: 0 5px 0 rgb(17, 129, 17);
+      margin-top: 220px;
     }
     #btn:hover {
       opacity: 0.9;
@@ -230,7 +239,7 @@ body{
       width: 600px;
       height: 600px;
       background: rgb(25, 75, 182);
-      margin-top: 200px; 
+      margin-top: 200px;
       margin-left: 200px;
       text-align: center;
       line-height: 600px;
@@ -246,7 +255,7 @@ body{
       opacity: 0.7;
     }
     #modal-robot1{
-     
+
     }
     #ruby-modal{
       display: none;
@@ -299,7 +308,7 @@ body{
     #robot-train{
       float: left;
       position: absolute;
-      margin-top: 20px; 
+      margin-top: 20px;
       margin-left: 20px;
       display: none;
     }
@@ -309,7 +318,7 @@ body{
     #watermark{
       float: left;
       position: absolute;
-      margin-top: 20px; 
+      margin-top: 20px;
       margin-left: 20px;
       border-radius: 200px;
       display: none;
@@ -324,14 +333,14 @@ body{
     width: 700px;
     height: auto;
     text-align: center;
-   } 
+   }
    .ruby1{
      border-radius: 10px;
    }
    .ruby1:hover{
      opacity: 0.8;
    }
-  
+
    .btn{
      cursor: pointer;
    }
@@ -386,7 +395,7 @@ body{
   text-align: center;
   display: flex;
   }
-  &-btn{ 
+  &-btn{
     cursor: pointer;
     background: chartreuse;
     margin: 0 60px;
@@ -527,7 +536,7 @@ body{
     color: palevioletred;
     margin: 10px;
   }
-  &-icon1{ 
+  &-icon1{
     color: #e4e4e4;
     margin: 10px;
     user-select: none;
@@ -535,7 +544,7 @@ body{
   }
   &-icon i {
     margin-left: 20px;
-    
+
   }
   &-like {
     display: inline-flex;
@@ -678,7 +687,7 @@ body{
 
 // ここからcontact
 .home_contact{
-  
+
   &_top{
     text-align: center;
     color: white;
@@ -896,7 +905,7 @@ body{
   }
   .checkbox{
     font-size: 14px;
-    
+
   }
   &_reset{
     font-size: 14px;

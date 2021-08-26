@@ -16,3 +16,15 @@
     </div>
   </div>
 </div>
+<script>
+' use strict';
+{
+  const btn = document.getElementById('omi-btn');
+
+  btn.addEventListener('click', ()=> {
+    const results = ['鉄腕アトム', 'ガンダム','カエルのピクルス', 'マジンガーZ', 'ターミネーター', 'トランスフォーマー', 'ど根性　蛙　ピョン吉'];
+    const n = Math.floor(Math.random() * results.length);
+    btn.textContent = results[n];
+  });
+}
+</script>
