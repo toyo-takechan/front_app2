@@ -6,7 +6,8 @@
   <div class="header-middle">
     <ul class="header-middle-link">
       <% if logged_in? %>
-      <li><%= link_to "チャット" , chat_path, data: {"turbolinks" => false} %></li>
+      <%# <li><%= link_to "チャット" , chat_path, data: {"turbolinks" => false} %>
+      <li><%= link_to "チャット" , new_chat_path, data: {"turbolinks" => false} %></li>
       <li><%= link_to "投稿する" , new_micropost_path, data: {"turbolinks" => false} %></li>
       <% else %>
       <% end %>

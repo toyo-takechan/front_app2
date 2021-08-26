@@ -6,8 +6,8 @@ class HomesController < ApplicationController
   def heart
   end
 
-  def chat
-  end
+  # def chat
+  # end
 
   def car
   end
