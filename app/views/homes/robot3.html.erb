@@ -12,7 +12,22 @@
     <div class="robot-right">
     <button class="robot-right-btn" id="watermark-up"><i class="fas fa-skull-crossbones fa-4x"></i></button>
     <button class="robot-right-btn" id="train-up"><i class="fas fa-bus-alt fa-4x"></i></button>
-    <div id="robot-right-box">青い箱</div>
+    <div id="robot-right-box">格言ボックス</div>
     </div>
   </div>
 </div>
+
+<script>
+' use strict';
+{
+  const btn = document.getElementById('robot-right-box');
+
+  btn.addEventListener('click', ()=> {
+    const results = ['覚悟はいいか？俺はできている', 'この世界は残虐だが美しい','あまり強い言葉を言うと弱く見えるぞ', 'しびれるっ！あこがれるっ！', '奇跡は諦めない奴にしか降りて来ない！', '諦めたらそこで試合終了だよ', '鍛え方と訓練次第でいくらでも強くなる'];
+    const n = Math.floor(Math.random() * results.length);
+    btn.textContent = results[n];
+  });
+}
+
+
+</script>
