@@ -20,10 +20,13 @@
     </div>
 
     <div class ="stopwach">
+      <h1>ストップウォッチで遊ぼう！</h1>
       <div id="timer">00:00.000</div>
-      <button id ="start">START</button>
-      <button id ="stop">STOP</button>
-      <button id ="reset">RESET</button>
+      <div class="stopwach-controls">
+      <div class="stopwach-btn" id="start">Start</div>
+      <div class="stopwach-btn" id="stop">Stop</div>
+      <div class="stopwach-btn" id="reset">Reset</div>
+    </div>
     </div>
 
     <div class ="heart-icon">
@@ -35,15 +38,67 @@
 </div>
 
 <script>
-  'use strict';
+'use strict';
 
-  {
-    const timer = document.getElementById('timer');
-    const start = document.getElementById('start');
-    const stop  = document.getElementById('stop');
-    const reset = document.getElementById('reset');
+{
+  const timer = document.getElementById('timer');
+  const start = document.getElementById('start');
+  const stop = document.getElementById('stop');
+  const reset = document.getElementById('reset');
 
+  let startTime;
+  let timeoutId;
+  let elapsedTime = 0;
+
+  function countUp() {
+    const d = new Date(Date.now() - startTime + elapsedTime);
+    const m = String(d.getMinutes()).padStart(2, '0');
+    const s = String(d.getSeconds()).padStart(2, '0');
+    const ms = String(d.getMilliseconds()).padStart(3, '0');
+    timer.textContent = `${m}:${s}.${ms}`;
+
+    timeoutId = setTimeout(() => {
+      countUp();
+    }, 10);
   }
 
+  function setButtonStateInitial() {
+    start.disabled = false;
+    stop.disabled = true;
+    reset.disabled = true;
+  }
+
+  function setButtonStateRunning() {
+    start.disabled = true;
+    stop.disabled = false;
+    reset.disabled = true;
+  }
+
+  function setButtonStateStopped() {
+    start.disabled = false;
+    stop.disabled = true;
+    reset.disabled = false;
+  }
+
+  setButtonStateInitial();
+
+  start.addEventListener('click', () => {
+    setButtonStateRunning();
+    startTime = Date.now();
+    countUp();
+  });
+
+  stop.addEventListener('click', () => {
+    setButtonStateStopped();
+    clearTimeout(timeoutId);
+    elapsedTime += Date.now() - startTime;
+  });
+
+  reset.addEventListener('click', () => {
+    setButtonStateInitial();
+    timer.textContent = '00:00.000';
+    elapsedTime = 0;
+  });
+}
 
 </script>

@@ -616,8 +616,43 @@ body{
    }
 }
 // heartの中のストップウォッチ
+.stopwach {
+  & h1 {
+    background-color: plum;
+    border-radius: 10px;
+    width: 500px;
+  }
+  &-controls {
+    width: 500px;
+    display: flex;
+    // justify-content: space-between;
+  }
+  &-btn {
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: thick double plum;
+    background-color: pink;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
 
+  #timer {
+    background-color: pink;
+    border-radius: 20px;
+    width: 500px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 80px;
+    padding-left: 100px;
+    // margin-bottom: 15px;
+  }
 
+}
 // ここからスライド
 .slide-wrapper {
   text-align: center;
